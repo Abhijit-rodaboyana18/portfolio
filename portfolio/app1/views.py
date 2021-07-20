@@ -11,14 +11,8 @@ def personal(request):
 def skills(request):
     return render(request,'skills.html')
 
-def experience(request):
-    return render(request,'experience.html')
-
 def blog(request):
     return render(request,'blog.html')
-
-def about(request):
-    return render(request,'about.html')
 
 def contact(request):
     return render(request,'contact.html')

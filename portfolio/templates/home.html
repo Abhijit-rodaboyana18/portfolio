@@ -3,9 +3,25 @@
 {% block content %}
 <body style="background-color:grey">
 <div class="container-fluid bg-6 text-center">
-  <h2 class="margin"> Hello </h2>
   <img src="{% static 'image/code.jpg' %}" class="img-responsive img-square margin" style="display:inline" alt="Code" width="350" height="350">
-  <h3>Abhijit Rodaboyana</h3>
+  <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-one">Hello,</div>
+       <div class="text-two">I'm Abhijit Rodaboyana</div>
+       <div class="text-three">Python Developer</div>
+
+     </div>
+   </div>
+ </section>
+
+  <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
 </div>
 </body>
+
 {% endblock %}
